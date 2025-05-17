@@ -1,0 +1,62 @@
+so please read this insturcitiona and explain for me in short and keep it in mind since am going to ask you about it later
+
+Project Overview
+In this task, you'll see a prompt that's related to coding, such as generating code, explaining code, debugging a code snippet, writing comments/documentation, etc. You'll also see two responses from different models that attempt to respond to the prompt. There may also be a prior conversation history leading up to the current responses. Your job is to look closely at each response and determine the following:
+
+How correct is the response?
+
+How well did the response follow the prompt's instructions?
+
+How well did the response use the context from the prior conversation history to inform its answer (if necessary)?
+
+How well did the response show proactive collaboration -- for instance, asking follow-up questions or making suggestions when appropriate?
+
+Were you able to run the code in the response (or make it runnable by adding the necessary context)?
+
+Based on the correctness/instruction following of each response, which is better?
+
+Many of these tasks will contain a conversation/dialogue history (and some may not). Please make sure to read through and understand the complete dialogue history before answering any questions.
+
+Response A and Response B will be directly responding to the most recent prompt in the conversation, which is simply labeled User Prompt.
+
+Note: If the conversation history contains major issues that are preventing you from properly rating Response A and Response B, please use the "There were major issues with previous turns" checkbox.
+
+Many aspects of this task are subtle and nuanced, and relatively small differences between responses can be crucially important. In some cases, reasonable-sounding explanations may be factually incorrect. As such, it is important that you are confident in the ratings you give. If you are not confident with the subject matter of the prompt, please skip the task.
+
+The primary focus of this task is correctness and instruction following. Recall and Collaboration are also factors but can be considered secondary to correctness and instruction-following. Here, correctness refers to both the truthfulness/factuality of any claim made in the response and the functionality of the code in the response. You will need to thoroughly verify any claims made in the responses as well as any code that is able to be evaluated. This may involve extensive research using tools such as Stack Overflow or online documentation. And of course, you should be running any applicable code and inspecting it closely to verify if it is correct. You can spend up to 1 hour (total, across both responses) verifying the correctness of the responses if necessary.
+
+Note that when you are evaluating the code correctness of a response, you should attempt to add any necessary context/dependencies (within reason) in order to make the code runnable to check its correctness. For example, if you need to wrap the code in a main function/method or set up a mock database in order for the code to be runnable, you should do it. If attempting to do so would take an unreasonable amount of time (meaning you wouldn't be able to do so within the time limit of this task), you should still inspect the code closely and verify whether or not it is correct. (Use the context from previous turns when necessary as well!)
+
+If/when you run the code, don't modify the code in the response except to add necessary context/dependencies. We want to check the correctness of its functionality. For example, wrapping the response's code in a main function that's necessary for the code to run is fine. If the code uses an example file name or some other kind of placeholder (e.g. <filename here>), you can change that to test with your own file. However, make sure not to change the underlying functionality of the code. Additionally, do not penalize a response for requiring extra context/dependencies to be able to run. We only want to penalize code that is bad/incorrect. Please see this document for examples.
+
+The final head-to-head comparison should reflect how helpful the response is to the user. Correctness and instruction-following should be the primary consideration in the comparison, and recall/collaboration should be secondary. Note that there may be cases where the less correct response is better if the other response had significant issues with instruction following, recall, or collaboration. Use your best judgment in these scenarios.
+
+If the two responses are still about equal after considering correctness and instruction following (as well as the other secondary factors-- recall, and collaboration), you can consider the following factors to help you make a final decision:
+
+Verbosity: Is the length of the response (both the code and non-code portions) appropriate? The response should include all essential information while avoiding excessive additional details. Generally, a succinct response should be preferred over a verbose one (all else being equal), but this can depend on preference and context.
+
+Style: Does the response use high-quality prose that’s well-organized and easy to read? Is the included code, if any, reasonably formatted and includes sufficient and accurate documentation?
+
+IMPORTANT NOTE ON VERBOSITY:
+
+When both responses are equally good/correct, you should prefer the more concise response (this applies to the text/explanation portion of the response-- not the code). Don't automatically prefer a response simply because it's longer. Responses that are more to the point and/or more directly address the prompt should be preferred. Note that this doesn't mean you should automatically prefer shorter responses either-- the response still needs to adequately address all aspects of the request. Try to put yourself in the shoes of a real user; if you asked the AI a question, you would most likely prefer a response that gave you the information in a concise/direct way.
+
+If the prompt is not code-related, please use the "prompt unratable" checkbox at the top of the ratings window.
+
+UI/Technical Note
+
+The responses are shown with markdown rendering. Please note that some inline code characters may not render correctly. Please see this image as an example ( < renders as &lt; and > renders as &gt;-- you may also see others such as &amp; in place of &. This is a platform issue, and you should not penalize the responses for this. Additionally, each response is shown without any markdown rendering for your reference in case you are unsure if something in the markdown-rendered version is a rendering issue and therefore should be ignored.
+
+Do not penalize or prefer responses for any specific syntax highlighting (or lack of syntax highlighting). Some languages (or versions of languages) may have supported syntax highlighting while others may not.
+
+
+Use of online code editors, interpreters, or compilers is typically prohibited
+For the sake of confidentiality, in general do not use online/cloud code editors, interpreters, or compilers to edit/run any code related to this task (e.g. JSFiddle, .NetFiddle, etc). Any code that you edit/run should be done so in a local environment (i.e. in an IDE/editor installed locally on your computer).
+
+Using publicly available tools to edit/run the code increases the risk of confidential/sensitive data being leaked/exposed.
+
+If a task is impossible to do without putting code online due to the specific requirements of the prompt and/or responses:
+
+You can put the code online temporarily to do the task, but please ensure the code is not saved in a way that it is publicly accessible.
+
+Delete the code after you're done with the task.

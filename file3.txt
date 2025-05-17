@@ -1,0 +1,57 @@
+echo "Hello from Tutorialspoint!" > greeting.txt
+cat greeting.txt
+bash: /usr/bin/cat: Permission denied
+$ ls -l /usr/bin/cat
+head myfile.txt
+more myfile.txt
+
+//create folder
+
+mkdir school_notes
+ls
+pwd
+touch math.txt
+ls
+
+cp math.txt backup.txt
+ls
+
+//Move file
+
+mv backup.txt final_homework.txt
+ls
+
+//Remove file
+
+rm final_homework.txt
+ls
+
+//Change file permission
+
+touch test.sh
+chmod +x test.sh
+ls -l test.sh
+
+✅ grep — Search inside file
+
+echo -e "math\nphysics\nchemistry" > subjects.txt
+grep "math" subjects.txt
+
+//First and Last lines
+
+$ head prog.txt
+HTML
+CSS
+JavaScript
+$ grep "CSS" prog.txt
+CSS
+$ head -n 1 prog.txt
+HTML
+$ tail -n 1 prog.txt
+JavaScript
+
+✅ find — Find files
+find . -name "math.txt"
+
+✅ file — Check file type
+file subjects.txt
