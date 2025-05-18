@@ -1,6 +1,6 @@
-so please read this insturcitiona and explain for me in short and keep it in mind since am going to ask you about it later
+JOHN
 
-Project Overview
+ Overview
 In this task, you'll see a prompt that's related to coding, such as generating code, explaining code, debugging a code snippet, writing comments/documentation, etc. You'll also see two responses from different models that attempt to respond to the prompt. There may also be a prior conversation history leading up to the current responses. Your job is to look closely at each response and determine the following:
 
 How correct is the response?
